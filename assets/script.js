@@ -7,8 +7,9 @@ searchBtn.onclick = function() {
                 let img = document.createElement('img');
                 let divPic = document.getElementById('pic');
                 img.name="gif";
-                img.src=pic.data[i].url;
+                img.src=pic.data[i].images.original.url;
                 divPic.appendChild(img);
+                console.log(pic);
             }    
     })
     .catch(error => console.log(error));
